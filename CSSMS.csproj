@@ -25,10 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Commands\" />
     <Folder Include="Application\DTOs\" />
     <Folder Include="Application\Queries\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Infrastructure\DapperQueries\" />
     <Folder Include="Infrastructure\Repositories\" />
   </ItemGroup>
