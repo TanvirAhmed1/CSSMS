@@ -1,4 +1,5 @@
 ﻿using CSSMS.Application.Commands.Customers;
+using CSSMS.Application.Queries.Customers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,6 +35,13 @@ namespace CSSMS.Controllers
         {
             var result = await _mediator.Send(new DeleteCustomerCommand { Id = id });
             return result ? Ok("Customer deleted.") : NotFound("Customer not found.");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllCustomers()
+        {
+            var result = await _mediator.Send(new GetAllCustomersQuery());
+            return Ok(result);
         }
     }
 }

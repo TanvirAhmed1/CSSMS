@@ -25,8 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\DTOs\" />
-    <Folder Include="Application\Queries\" />
     <Folder Include="Infrastructure\DapperQueries\" />
     <Folder Include="Infrastructure\Repositories\" />
   </ItemGroup>
